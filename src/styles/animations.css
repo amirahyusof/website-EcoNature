@@ -1,0 +1,54 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.gradient-green {
+  background: linear-gradient(135deg, #2d5016 0%, #4a7c27 50%, #6b9d3f 100%);
+}
+
+.gradient-earth {
+  background: linear-gradient(to bottom, #a7c957, #6a994e, #386641);
+}
+
+.leaf-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 10c-5 0-9 4-9 9 0 3 1.5 5.5 4 7.5-2.5 2-4 4.5-4 7.5 0 5 4 9 9 9s9-4 9-9c0-3-1.5-5.5-4-7.5 2.5-2 4-4.5 4-7.5 0-5-4-9-9-9z' fill='%234a7c27' fill-opacity='0.05'/%3E%3C/svg%3E");
+}
